@@ -7,7 +7,7 @@ var algorithmsList = [
         name : 'Bubble Sort',
         about : 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
         imgPath : 'images/sorting.gif' ,
-        pageLink : '#' 
+        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Bubble-sort/index.html' 
     },
     {
         name : 'Bubble Sort',
