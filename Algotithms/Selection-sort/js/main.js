@@ -83,7 +83,7 @@ function draw()
              background(51); 
             for (let i = 0; i < values.length; i++) 
             {
-                values[i].yellow() ;
+                values[i].fillValue = colorGreen;
                 values[i].show();
             }
             document.getElementById('startToggle').innerHTML = 'Refresh' ;
