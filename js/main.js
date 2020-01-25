@@ -16,10 +16,10 @@ var algorithmsList = [
         pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Selection-sort/index.html' 
     },
     {
-        name : 'Bubble Sort',
-        about : 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
+        name : 'Merge Sort',
+        about : ' Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945, an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output.',
         imgPath : 'images/sorting.gif' ,
-        pageLink : '#' 
+        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Merge-sort/index.html' 
     },
     {
         name : 'Bubble Sort',
