@@ -22,10 +22,10 @@ var algorithmsList = [
         pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Merge-sort/index.html' 
     },
     {
-        name : 'Bubble Sort',
-        about : 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
+        name : 'Insertion Sort',
+        about : 'Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists',
         imgPath : 'images/sorting.gif' ,
-        pageLink : '#' 
+        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Insertion-sort/index.html' 
     },
     {
         name : 'Bubble Sort',
