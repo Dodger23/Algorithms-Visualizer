@@ -28,10 +28,10 @@ var algorithmsList = [
         pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Insertion-sort/index.html' 
     },
     {
-        name : 'Bubble Sort',
-        about : 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
+        name : 'DFS',
+        about : 'The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking. ... Pop a node from stack to select the next node to visit and push all its adjacent nodes into a stack.',
         imgPath : 'images/sorting.gif' ,
-        pageLink : '#' 
+        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/DFS/index.html' 
     },
     {
         name : 'Bubble Sort',
