@@ -1,49 +1,52 @@
-
-
-/* List contains the data about every algorithm card, The function 'algorithmsCards() 'loop and takes the information to make every card    */ 
+/* List contains the data about every algorithm card, The function 'algorithmsCards() 'loop and takes the information to make every card    */
 var algorithmsList = [
-    
+
     {
-        name : 'Bubble Sort',
-        about : 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
-        imgPath : 'images/sorting.gif' ,
-        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Bubble-sort/index.html' 
+        name: 'Bubble Sort',
+        about: 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
+        imgPath: 'images/sorting.gif',
+        pageLink: '../Algotithms/Bubble-sort/index.html'
     },
     {
-        name : 'Selection Sort',
-        about : 'an in-place comparison sort. It has O(n²) time complexity, making it inefficient on large lists',
-        imgPath : 'images/sorting.gif' ,
-        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Selection-sort/index.html' 
+        name: 'Selection Sort',
+        about: 'an in-place comparison sort. It has O(n²) time complexity, making it inefficient on large lists',
+        imgPath: 'images/sorting.gif',
+        pageLink: '../Algotithms/Selection-sort/index.html'
     },
     {
-        name : 'Merge Sort',
-        about : ' Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945, an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output.',
-        imgPath : 'images/sorting.gif' ,
-        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Merge-sort/index.html' 
+        name: 'Merge Sort',
+        about: ' Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945, an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output.',
+        imgPath: 'images/sorting.gif',
+        pageLink: '../Algotithms/Merge-sort/index.html'
     },
     {
-        name : 'Insertion Sort',
-        about : 'Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists',
-        imgPath : 'images/sorting.gif' ,
-        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/Insertion-sort/index.html' 
+        name: 'Insertion Sort',
+        about: 'Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists',
+        imgPath: 'images/sorting.gif',
+        pageLink: '../Algotithms/Insertion-sort/index.html'
     },
     {
-        name : 'DFS',
-        about : 'The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking. ... Pop a node from stack to select the next node to visit and push all its adjacent nodes into a stack.',
-        imgPath : 'images/sorting.gif' ,
-        pageLink : 'file:///C:/Users/Dodger/Desktop/Project/Algorithms%20Visualizer/Algotithms/DFS/index.html' 
+        name: 'DFS',
+        about: 'The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking. ... Pop a node from stack to select the next node to visit and push all its adjacent nodes into a stack.',
+        imgPath: 'images/sorting.gif',
+        pageLink: '../Algotithms/DFS/index.html'
     },
     {
-        name : 'Bubble Sort',
-        about : 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
-        imgPath : 'images/sorting.gif' ,
-        pageLink : '#' 
+        name: 'Bubble Sort',
+        about: 'Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.',
+        imgPath: 'images/sorting.gif',
+        pageLink: '#'
     },
+    {
+        name: 'Tower Of Hanoi',
+        about: 'Explaining The Famous Tower Of Hanoi Puzzle.',
+        imgPath: 'images/sorting.gif',
+        pageLink: '../Algotithms/Tower-of-Hanoi/index.html'
+    }
 ]
 
 
-function algorithmsCards()
-{
+function algorithmsCards() {
     // Looping through every elemnt in the 'algorithmsList' list and creating a card for every algorithm object with that object data 
     /*
         Parent => child 
@@ -51,53 +54,52 @@ function algorithmsCards()
         Herarchy : card => pagePath =>  img , ( body => title , text   )
         Type     : <div>     <a>       <img>   <div>    <h5>    <p>
     */
-    for(i=0;i<algorithmsList.length;i++)  
-    {
-        
+    for (i = 0; i < algorithmsList.length; i++) {
+
         // creating a wrapping <a> to link the card to it's specific page 
-        let pagePath = document.createElement('a') ;
+        let pagePath = document.createElement('a');
         pagePath.href = algorithmsList[i].pageLink;
-        
-        
+
+
         // creating the card 
-        let card = document.createElement('div') ;
+        let card = document.createElement('div');
         card.classList.add('card');
         card.classList.add('col-xs-6');
         card.classList.add('col-sm-5');
         card.classList.add('col-md-4');
         card.classList.add('col-lg-3');
-        
+
         // creating the card image
-        let img = document.createElement('img') ;   
-        img.src = algorithmsList[i].imgPath ;
+        let img = document.createElement('img');
+        img.src = algorithmsList[i].imgPath;
         img.classList.add('card-img-top');
-        
+
         // creating the card body
         let body = document.createElement('div');
         body.classList.add('card-body');
-        
+
         // creating the card-body title 
         let title = document.createElement('h5');
         title.classList.add('card-title');
         title.classList.add('text-color');
-        title.innerHTML = algorithmsList[i].name ;
-        
+        title.innerHTML = algorithmsList[i].name;
+
         // creating the card-body text 
-        let text = document.createElement('p') ;
+        let text = document.createElement('p');
         text.classList.add('card-text');
         text.classList.add('text-color');
-        text.innerHTML = algorithmsList[i].about; 
-        
+        text.innerHTML = algorithmsList[i].about;
+
         // appending the title and the text to the 'body' elemnt 
-        body.appendChild(title) ;
-        body.appendChild(text) ;
-        
+        body.appendChild(title);
+        body.appendChild(text);
+
         // appending the img and the the body to the <a> element 
         pagePath.appendChild(img);
-        pagePath.appendChild(body) ;
-        
+        pagePath.appendChild(body);
+
         // appending the <a> element to the card 
-        card.appendChild(pagePath) ;
-        document.getElementById('container').appendChild(card) ;
+        card.appendChild(pagePath);
+        document.getElementById('container').appendChild(card);
     }
 }
