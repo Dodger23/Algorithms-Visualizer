@@ -28,13 +28,13 @@ var algorithmsList = [
     {
         name: 'DFS',
         about: 'The DFS algorithm is a recursive algorithm that uses the idea of backtracking. It involves exhaustive searches of all the nodes by going ahead, if possible, else by backtracking. ... Pop a node from stack to select the next node to visit and push all its adjacent nodes into a stack.',
-        imgPath: 'images/sorting.gif',
+        imgPath: 'images/dfs.gif',
         pageLink: '../Algotithms/DFS/index.html'
     },
     {
         name: 'Tower Of Hanoi',
         about: 'Explaining The Famous Tower Of Hanoi Puzzle.',
-        imgPath: 'images/sorting.gif',
+        imgPath: 'images/toh.gif',
         pageLink: '../Algotithms/Tower-of-Hanoi/index.html'
     }
 ]
