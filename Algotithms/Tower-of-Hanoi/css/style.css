@@ -1,17 +1,14 @@
 /* ============================================================ Setup ======================================================================*/
-body
-{
-    margin: 0px ; 
-    padding: 0px ; 
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-a:hover
-{
+a:hover {
     text-decoration: none;
 }
 
-.text-color
-{
+.text-color {
     color: #464141;
 }
 
@@ -21,31 +18,27 @@ a:hover
 
 /* ======================================================== Startin Header ===================================================================*/
 
-header nav
-{
+header nav {
     padding: 20px;
     text-align: center;
     background-color: #7367F0;
     color: white;
-    font-family: Poppins; 
+    font-family: Poppins;
 }
 
-.menue 
-{
-    background-color: rgb(51,51,51) ;
+.menue {
+    background-color: rgb(121, 120, 120);
     padding: 20px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
 }
 
-.menue *
-{
+.menue * {
     margin: 2px;
 }
 
-.buttons
-{
+.buttons {
     display: flex;
     justify-content: space-around;
     width: 70%;
@@ -54,8 +47,7 @@ header nav
 
 /* ==================================================== Ending Algorithms-Container ========================================================*/
 /* ========================================================= Starting Footer ===========================================================*/
-footer
-{
+footer {
     text-align: center;
     padding: 20px;
     background-color: #262626;
@@ -65,6 +57,3 @@ footer
 
 
 /* ========================================================= Ending Footer ===========================================================*/
-
-
-
